@@ -1,0 +1,65 @@
+﻿using Codetox.Variables;
+using UnityEngine;
+
+namespace Player
+{
+    public class JumpController : MonoBehaviour
+    {
+        [SerializeField] private new Rigidbody2D rigidbody;
+        [SerializeField] private ValueReference<float> minHeight;
+        [SerializeField] private ValueReference<float> maxHeight;
+        [SerializeField] private ValueReference<float> apexTime;
+        [SerializeField] private ValueReference<int> jumpAmount;
+
+        private float _gravity, _maxVelocity, _minVelocity;
+        private bool _isGrounded, _isJumping;
+        private int _jumpsLeft;
+
+        private void Awake()
+        {
+            var maxHeightValue = maxHeight.Value;
+            var minHeightValue = minHeight.Value;
+            var apexTimeValue = apexTime.Value;
+
+            _gravity = 2 * maxHeightValue / (apexTimeValue * apexTimeValue);
+            _maxVelocity = 2 * maxHeightValue / apexTimeValue;
+            _minVelocity = 2 * minHeightValue / apexTimeValue;
+        }
+
+        private void FixedUpdate()
+        {
+            if (_isGrounded) return;
+
+            var velocity = rigidbody.velocity;
+
+            if (!_isJumping && velocity.y > _minVelocity) velocity.y = _minVelocity;
+            else velocity.y -= _gravity * Time.fixedDeltaTime;
+
+            rigidbody.velocity = velocity;
+        }
+
+        public void StartJumping()
+        {
+            if (_jumpsLeft <= 0) return;
+            rigidbody.velocity = new Vector2(rigidbody.velocity.x, _maxVelocity);
+            _isJumping = true;
+            _jumpsLeft--;
+        }
+
+        public void StopJumping()
+        {
+            _isJumping = false;
+        }
+
+        public void OnTouchGround()
+        {
+            _isGrounded = true;
+            _jumpsLeft = jumpAmount.Value;
+        }
+
+        public void OnLeaveGround()
+        {
+            _isGrounded = false;
+        }
+    }
+}
