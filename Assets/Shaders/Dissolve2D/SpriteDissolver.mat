@@ -39,7 +39,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _EdgeThiccness: 0.1
-    - _Fade: 0.214
+    - _Fade: 1
     - _NoiseScale: 30
     m_Colors:
     - _EdgeColor: {r: 1, g: 0.13054681, b: 0, a: 0}
