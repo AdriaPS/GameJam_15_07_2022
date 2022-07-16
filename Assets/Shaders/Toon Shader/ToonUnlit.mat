@@ -52,9 +52,9 @@ Material:
     m_Ints: []
     m_Floats:
     - Vector1_533C9C05: 0.103
-    - Vector1_911421B8: 0.417
+    - Vector1_911421B8: 0.376
     - Vector1_A7207CA3: 0
-    - _CellShading: 244
+    - _CellShading: 245
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
