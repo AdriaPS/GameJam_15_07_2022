@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6475079bea3a1334e9b47a9ee0ea3d68
+guid: 2304724f4763ea3449cbcfe90130960d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle Shooting Upward Sprite Sheet_0
+      name: dice_idle_02_spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 139852d6a05a1f74fbe9852075f135b7
-      internalID: 322609779
+      spriteID: 9e6fbacac1d76b7469ab771d84c20b88
+      internalID: 1188564367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle Shooting Upward Sprite Sheet_1
+      name: dice_idle_02_spritesheet_1
       rect:
         serializedVersion: 2
         x: 1000
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 549e2429c64dcf443a7be64ff0ae0e1e
-      internalID: 274052013
+      spriteID: 5d73a200260b00045a812e3d8a352871
+      internalID: -1927360606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle Shooting Upward Sprite Sheet_2
+      name: dice_idle_02_spritesheet_2
       rect:
         serializedVersion: 2
         x: 2000
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 140d0b32009189e44a3259a37cf9050b
-      internalID: -1192360018
+      spriteID: 91c93f04b4f9bfb49947dc13fb0ffb14
+      internalID: 1531002076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle Shooting Upward Sprite Sheet_3
+      name: dice_idle_02_spritesheet_3
       rect:
         serializedVersion: 2
         x: 0
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02b3c53d1177f4b4e96e022a904fa933
-      internalID: -1269540082
+      spriteID: be67ebdb46fa4fb42ae7afe2429bc6a7
+      internalID: -597118611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle Shooting Upward Sprite Sheet_4
+      name: dice_idle_02_spritesheet_4
       rect:
         serializedVersion: 2
         x: 1000
@@ -202,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80513e2a070b9e442b277258d2183053
-      internalID: -941800657
+      spriteID: ea1d2cc292070e74f95afa7d6d886fb4
+      internalID: -512275158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle Shooting Upward Sprite Sheet_5
+      name: dice_idle_02_spritesheet_5
       rect:
         serializedVersion: 2
         x: 2000
@@ -223,8 +223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69e9b998b0a683e4c99775bc7a8f4120
-      internalID: -319706098
+      spriteID: 13ad90e8d26f9474389a6935e3fda083
+      internalID: 900188745
       vertices: []
       indices: 
       edges: []
@@ -240,12 +240,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idle Shooting Upward Sprite Sheet_2: -1192360018
-      idle Shooting Upward Sprite Sheet_4: -941800657
-      idle Shooting Upward Sprite Sheet_1: 274052013
-      idle Shooting Upward Sprite Sheet_0: 322609779
-      idle Shooting Upward Sprite Sheet_3: -1269540082
-      idle Shooting Upward Sprite Sheet_5: -319706098
+      dice_idle_02_spritesheet_1: -1927360606
+      dice_idle_02_spritesheet_5: 900188745
+      dice_idle_02_spritesheet_0: 1188564367
+      dice_idle_02_spritesheet_4: -512275158
+      dice_idle_02_spritesheet_2: 1531002076
+      dice_idle_02_spritesheet_3: -597118611
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 924c79369a6506a4a98cbb84ebe342f8
+guid: ca4578db315a3254595c57b56fa22530
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dice_idle_spritesheet_0
+      name: Idle Shooting Forward Sprite Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74a409aae0a2efe45aba75e40b3d9c5f
-      internalID: 958858772
+      spriteID: 93a00220f09cf0f4abb75a6746df5eb8
+      internalID: 152097692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dice_idle_spritesheet_1
+      name: Idle Shooting Forward Sprite Sheet_1
       rect:
         serializedVersion: 2
         x: 1000
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 019094b8293045b41b5b2727503492e8
-      internalID: -1732787606
+      spriteID: 7efa8831568126045ad2d53edc35da5d
+      internalID: -2018012342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dice_idle_spritesheet_2
+      name: Idle Shooting Forward Sprite Sheet_2
       rect:
         serializedVersion: 2
         x: 2000
@@ -160,35 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55422b12cd00882408ecaad6283e242c
-      internalID: -2096766825
+      spriteID: 6760f4bd805cea94496da56cebd9b1b5
+      internalID: 400182108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dice_idle_spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ffa67bc5083bd7f43a63f66963180408
-      internalID: -335242542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dice_idle_spritesheet_4
+      name: Idle Shooting Forward Sprite Sheet_3
       rect:
         serializedVersion: 2
         x: 0
@@ -202,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87f7cb1051e6cc64a93e60afdaa38a64
-      internalID: -47057094
+      spriteID: caeb676e22a98aa4f864276058b6c36b
+      internalID: 201267952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dice_idle_spritesheet_5
+      name: Idle Shooting Forward Sprite Sheet_4
       rect:
         serializedVersion: 2
         x: 1000
@@ -223,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d372cf2d8375f0e47a69314fc9ab0931
-      internalID: -1612886498
+      spriteID: 1f1eb48b10fc7674e8af02fb47320038
+      internalID: 1460372078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dice_idle_spritesheet_6
+      name: Idle Shooting Forward Sprite Sheet_5
       rect:
         serializedVersion: 2
         x: 2000
@@ -244,29 +223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5362222aff89f745853c6d099c42466
-      internalID: 621795811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dice_idle_spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62dbad53773f3364cb6f82f5560817e1
-      internalID: -1321844416
+      spriteID: 0199e54d5df378245880144687e2fb4a
+      internalID: 442003468
       vertices: []
       indices: 
       edges: []
@@ -282,14 +240,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dice_idle_spritesheet_4: -47057094
-      dice_idle_spritesheet_1: -1732787606
-      dice_idle_spritesheet_7: -1321844416
-      dice_idle_spritesheet_2: -2096766825
-      dice_idle_spritesheet_3: -335242542
-      dice_idle_spritesheet_6: 621795811
-      dice_idle_spritesheet_5: -1612886498
-      dice_idle_spritesheet_0: 958858772
+      Idle Shooting Forward Sprite Sheet_3: 201267952
+      Idle Shooting Forward Sprite Sheet_2: 400182108
+      Idle Shooting Forward Sprite Sheet_5: 442003468
+      Idle Shooting Forward Sprite Sheet_1: -2018012342
+      Idle Shooting Forward Sprite Sheet_0: 152097692
+      Idle Shooting Forward Sprite Sheet_4: 1460372078
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

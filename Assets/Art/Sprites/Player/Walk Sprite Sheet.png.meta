@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f836fbb6ca505834f91232faae195608
+guid: a6f1bf310c7e5834fab6e2e93a1d481a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dice Sprite Sheet_0
+      name: dice_walk_01_spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 949
-        width: 1003
-        height: 949
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c08e45202c83d1149918098e70113ee4
-      internalID: 958170196
+      spriteID: 9459b9ab51bb9c74c84034fd0da2ec74
+      internalID: -711686932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dice Sprite Sheet_1
+      name: dice_walk_01_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 1003
-        y: 949
-        width: 1003
-        height: 949
+        x: 1000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ae1b31f7afc62143a28fbc94cb69fbb
-      internalID: 1489918340
+      spriteID: 924cf370a94d2334098571be6b1d6153
+      internalID: 276961409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dice Sprite Sheet_2
+      name: dice_walk_01_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 2006
-        y: 949
-        width: 1003
-        height: 949
+        x: 2000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a85b20586e2ae354ca8e8b6b65738c41
-      internalID: -1725411442
+      spriteID: f0b58ac840cb7814c9ad80753a9e6c78
+      internalID: 1937152760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dice Sprite Sheet_3
+      name: dice_walk_01_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 3009
-        y: 949
-        width: 1003
-        height: 949
+        x: 3000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab26e3545f3cc0247bd5b876c5d2cdeb
-      internalID: 893735328
+      spriteID: a10581527f13088469423d6fc1f83013
+      internalID: 917751703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dice Sprite Sheet_4
+      name: dice_walk_01_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 4012
-        y: 949
-        width: 1003
-        height: 949
+        x: 4000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4aff4a1e63b56e45956bdfdf1a78883
-      internalID: -770478890
+      spriteID: db600f276f0416c44b3304ae92bcde7e
+      internalID: -2064753022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dice Sprite Sheet_5
+      name: dice_walk_01_spritesheet_5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1003
-        height: 949
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d93b5b101ff8ea408dc63a7d0846c04
-      internalID: 23063973
+      spriteID: e77c7d185c076cb4a91296d39fc6d3a7
+      internalID: -1644655680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dice Sprite Sheet_6
+      name: dice_walk_01_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 1003
+        x: 1000
         y: 0
-        width: 1003
-        height: 949
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8fec327caf466243a33d2b917f7ca72
-      internalID: 461976064
+      spriteID: 9230d6b95961c57418259db537c2011e
+      internalID: -623841666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dice Sprite Sheet_7
+      name: dice_walk_01_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 2006
+        x: 2000
         y: 0
-        width: 1003
-        height: 949
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,20 +265,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bd877a7563d55e419822cab77d0b641
-      internalID: -1410004382
+      spriteID: 5ab120249382ade4589df696c682f6f8
+      internalID: 805272245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dice Sprite Sheet_8
+      name: dice_walk_01_spritesheet_8
       rect:
         serializedVersion: 2
-        x: 3009
+        x: 3000
         y: 0
-        width: 1003
-        height: 949
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,20 +286,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb8a5990ea84f3041aced61cbdc001a7
-      internalID: 74450211
+      spriteID: 626a144d68a6ee848a8e24021c780c83
+      internalID: 694736289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dice Sprite Sheet_9
+      name: dice_walk_01_spritesheet_9
       rect:
         serializedVersion: 2
-        x: 4012
+        x: 4000
         y: 0
-        width: 1003
-        height: 949
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,8 +307,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28f7f9a2d9dec8f4b928147de418bb3f
-      internalID: 1132610830
+      spriteID: c141ad94b34287e4b883d37410c6493a
+      internalID: -1889553951
       vertices: []
       indices: 
       edges: []
@@ -324,16 +324,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dice Sprite Sheet_8: 74450211
-      Dice Sprite Sheet_6: 461976064
-      Dice Sprite Sheet_4: -770478890
-      Dice Sprite Sheet_0: 958170196
-      Dice Sprite Sheet_5: 23063973
-      Dice Sprite Sheet_7: -1410004382
-      Dice Sprite Sheet_1: 1489918340
-      Dice Sprite Sheet_9: 1132610830
-      Dice Sprite Sheet_2: -1725411442
-      Dice Sprite Sheet_3: 893735328
+      dice_walk_01_spritesheet_4: -2064753022
+      dice_walk_01_spritesheet_5: -1644655680
+      dice_walk_01_spritesheet_7: 805272245
+      dice_walk_01_spritesheet_1: 276961409
+      dice_walk_01_spritesheet_8: 694736289
+      dice_walk_01_spritesheet_9: -1889553951
+      dice_walk_01_spritesheet_3: 917751703
+      dice_walk_01_spritesheet_2: 1937152760
+      dice_walk_01_spritesheet_6: -623841666
+      dice_walk_01_spritesheet_0: -711686932
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

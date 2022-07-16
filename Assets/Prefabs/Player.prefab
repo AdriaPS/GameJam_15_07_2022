@@ -276,6 +276,9 @@ GameObject:
   - component: {fileID: 2472598303724009629}
   - component: {fileID: 2472598303724009628}
   - component: {fileID: 1874198239644751136}
+  - component: {fileID: 8526375888888427538}
+  - component: {fileID: 5005973070860459032}
+  - component: {fileID: 5717536550933381941}
   - component: {fileID: 4868229911521217973}
   m_Layer: 9
   m_Name: Moving State
@@ -315,7 +318,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onEnterState:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4988275794804270549}
+        m_TargetAssemblyTypeName: Player.PlayerAnimationController, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onExitState:
     m_PersistentCalls:
       m_Calls: []
@@ -375,6 +390,90 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8526375888888427538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2472598303724009630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 209e8bceab0b453089cc49825051ff9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 7c0dd7215b13edf488515e8c810200fe, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4988275794804270549}
+        m_TargetAssemblyTypeName: Player.PlayerAnimationController, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5005973070860459032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2472598303724009630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d99689d07e4220862eb4341c1c736a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: f897f83a7a178964daf75f620baa70cf, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4988275794804270549}
+        m_TargetAssemblyTypeName: Player.PlayerAnimationController, Assembly-CSharp
+        m_MethodName: OnStartShooting
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5717536550933381941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2472598303724009630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d99689d07e4220862eb4341c1c736a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 47b35288a66d70346a3e7af2f7e9de61, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4988275794804270549}
+        m_TargetAssemblyTypeName: Player.PlayerAnimationController, Assembly-CSharp
+        m_MethodName: OnStopShooting
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4868229911521217973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,6 +507,7 @@ GameObject:
   - component: {fileID: 2472598303971787001}
   - component: {fileID: 686742819605186943}
   - component: {fileID: 766877412069816139}
+  - component: {fileID: 5630308115860433911}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -603,6 +703,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &5630308115860433911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2472598303971787007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6bb25f83dd4565948b0daaff72a047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody2D: {fileID: 2472598303971787003}
+  currentPosition: {fileID: 11400000, guid: 5924296b3fdfa074a807ef79fef320cc, type: 2}
+  currentVelocity: {fileID: 11400000, guid: 7d284895a7f0dc4449105bad1940afda, type: 2}
 --- !u!1 &2472598304076859958
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,12 +793,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 508727390, guid: a08e88eb9327a724ca883ffac209fc70, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 574248439d0ee8b41affe708970c683b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.3333333, y: 3.3333333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -722,6 +837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2472598304076859955}
+  direction: {fileID: 11400000, guid: 0d82626a7292db949b3afbb55d664bc8, type: 2}
 --- !u!1 &2472598304629685895
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,7 +903,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2472598304859425724}
   - component: {fileID: 2472598304859425723}
-  - component: {fileID: 4637768679973053869}
   m_Layer: 9
   m_Name: Movement Controller
   m_TagString: Untagged
@@ -835,34 +950,6 @@ MonoBehaviour:
     useField: 1
     fieldValue: 0
     variableValue: {fileID: 11400000, guid: 653c59ca6ae4f2a4ba5adb8159b0288d, type: 2}
---- !u!114 &4637768679973053869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2472598304859425725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 209e8bceab0b453089cc49825051ff9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 7c0dd7215b13edf488515e8c810200fe, type: 2}
-  unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4988275794804270549}
-        m_TargetAssemblyTypeName: Player.PlayerAnimationController, Assembly-CSharp
-        m_MethodName: Walk
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &2472598305103050637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,7 +1321,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5617122482970428481}
   - component: {fileID: 8170765461471973576}
-  - component: {fileID: 7435886873264972061}
   m_Layer: 9
   m_Name: Movement Controller
   m_TagString: Untagged
@@ -1282,34 +1368,6 @@ MonoBehaviour:
     useField: 1
     fieldValue: 0
     variableValue: {fileID: 11400000, guid: 653c59ca6ae4f2a4ba5adb8159b0288d, type: 2}
---- !u!114 &7435886873264972061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2493953075280556834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 209e8bceab0b453089cc49825051ff9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 7c0dd7215b13edf488515e8c810200fe, type: 2}
-  unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4988275794804270549}
-        m_TargetAssemblyTypeName: Player.PlayerAnimationController, Assembly-CSharp
-        m_MethodName: Walk
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &3589869382057373782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,18 +1430,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4988275794804270549}
-        m_TargetAssemblyTypeName: Player.PlayerAnimationController, Assembly-CSharp
-        m_MethodName: StartShooting
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &190769267543708016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1402,18 +1448,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3777956171373055753}
         m_TargetAssemblyTypeName: Player.ShootingController, Assembly-CSharp
-        m_MethodName: StopShooting
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4988275794804270549}
-        m_TargetAssemblyTypeName: Player.PlayerAnimationController, Assembly-CSharp
         m_MethodName: StopShooting
         m_Mode: 1
         m_Arguments:
@@ -1540,18 +1574,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4988275794804270549}
-        m_TargetAssemblyTypeName: Player.PlayerAnimationController, Assembly-CSharp
-        m_MethodName: StartShooting
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &4682260072931313956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1570,18 +1592,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7245959663414268769}
         m_TargetAssemblyTypeName: Player.ShootingController, Assembly-CSharp
-        m_MethodName: StopShooting
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4988275794804270549}
-        m_TargetAssemblyTypeName: Player.PlayerAnimationController, Assembly-CSharp
         m_MethodName: StopShooting
         m_Mode: 1
         m_Arguments:
@@ -1695,7 +1705,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4988275794804270549}
         m_TargetAssemblyTypeName: Player.PlayerAnimationController, Assembly-CSharp
-        m_MethodName: Hit
+        m_MethodName: OnHit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

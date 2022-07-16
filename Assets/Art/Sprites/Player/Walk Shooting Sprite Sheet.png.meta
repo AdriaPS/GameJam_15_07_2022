@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a08e88eb9327a724ca883ffac209fc70
+guid: 87a0552092ada884f887065f0db5ed93
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dice_walk_spritesheet_0
+      name: Walk Shooting Sprite Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 162a5ec94cadb8b46a7d1b439c8f4c13
-      internalID: 508727390
+      spriteID: aa32e2a31f7a5b9419f346bf738206a6
+      internalID: 2074883289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dice_walk_spritesheet_1
+      name: Walk Shooting Sprite Sheet_1
       rect:
         serializedVersion: 2
         x: 1000
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 033aca6d29f34ad459d1477fc7d19b91
-      internalID: 1216453343
+      spriteID: 9138b0e5ea9c82b4bb83514d6fd89085
+      internalID: -1413913934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dice_walk_spritesheet_2
+      name: Walk Shooting Sprite Sheet_2
       rect:
         serializedVersion: 2
         x: 2000
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0dfad56564b95d4d9c45b50ea9e4074
-      internalID: 640699235
+      spriteID: c197872f7ec0b94418c2f05d2e5db7a9
+      internalID: -1921110700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dice_walk_spritesheet_3
+      name: Walk Shooting Sprite Sheet_3
       rect:
         serializedVersion: 2
         x: 3000
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 220840c6c4a766044a27f09cbef030ee
-      internalID: -2062331655
+      spriteID: 21a38b9429ee0fa4498f53c97d3072ed
+      internalID: 1530609099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dice_walk_spritesheet_4
+      name: Walk Shooting Sprite Sheet_4
       rect:
         serializedVersion: 2
         x: 4000
@@ -202,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a75fc07187fdd94eb2b39cd2d353d2f
-      internalID: -1957453362
+      spriteID: 3020e712a4ed7f5488f554a687961b89
+      internalID: 86038773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dice_walk_spritesheet_5
+      name: Walk Shooting Sprite Sheet_5
       rect:
         serializedVersion: 2
         x: 0
@@ -223,14 +223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb440444f869f4f45b770dfbcb04faf1
-      internalID: -754874026
+      spriteID: 525451540802d834795fc9941aed611d
+      internalID: 891880083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dice_walk_spritesheet_6
+      name: Walk Shooting Sprite Sheet_6
       rect:
         serializedVersion: 2
         x: 1000
@@ -244,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e534d96bd0c7a8f40a69e2704133cfc4
-      internalID: -1601865929
+      spriteID: 8801364c1a988b546b8d02ffd5ffe358
+      internalID: 496934010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dice_walk_spritesheet_7
+      name: Walk Shooting Sprite Sheet_7
       rect:
         serializedVersion: 2
         x: 2000
@@ -265,14 +265,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b64686770172ea04e89f5af315ea79e9
-      internalID: -842826232
+      spriteID: 946d20663db6d724993d6240c5504b44
+      internalID: -483999465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dice_walk_spritesheet_8
+      name: Walk Shooting Sprite Sheet_8
       rect:
         serializedVersion: 2
         x: 3000
@@ -286,14 +286,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dad95db3f88624438b22f25c0490e5b
-      internalID: -558849933
+      spriteID: 837c732d904db3d4f966418fc03251be
+      internalID: -1464593514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dice_walk_spritesheet_9
+      name: Walk Shooting Sprite Sheet_9
       rect:
         serializedVersion: 2
         x: 4000
@@ -307,8 +307,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 793de567947fcb7459334b664c1ce682
-      internalID: 1200225255
+      spriteID: 9563003ff053c944b967df44592571e5
+      internalID: -1427210672
       vertices: []
       indices: 
       edges: []
@@ -324,16 +324,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dice_walk_spritesheet_7: -842826232
-      dice_walk_spritesheet_9: 1200225255
-      dice_walk_spritesheet_3: -2062331655
-      dice_walk_spritesheet_6: -1601865929
-      dice_walk_spritesheet_0: 508727390
-      dice_walk_spritesheet_4: -1957453362
-      dice_walk_spritesheet_1: 1216453343
-      dice_walk_spritesheet_8: -558849933
-      dice_walk_spritesheet_2: 640699235
-      dice_walk_spritesheet_5: -754874026
+      Walk Shooting Sprite Sheet_2: -1921110700
+      Walk Shooting Sprite Sheet_1: -1413913934
+      Walk Shooting Sprite Sheet_9: -1427210672
+      Walk Shooting Sprite Sheet_7: -483999465
+      Walk Shooting Sprite Sheet_4: 86038773
+      Walk Shooting Sprite Sheet_0: 2074883289
+      Walk Shooting Sprite Sheet_8: -1464593514
+      Walk Shooting Sprite Sheet_3: 1530609099
+      Walk Shooting Sprite Sheet_5: 891880083
+      Walk Shooting Sprite Sheet_6: 496934010
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

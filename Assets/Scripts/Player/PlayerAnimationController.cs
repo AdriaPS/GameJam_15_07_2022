@@ -1,42 +1,78 @@
-﻿using UnityEngine;
+﻿using Codetox.Misc;
+using Codetox.Variables;
+using UnityEngine;
 
 namespace Player
 {
     public class PlayerAnimationController : MonoBehaviour
     {
         [SerializeField] private Animator animator;
+        [SerializeField] private Variable<Vector2> direction;
 
-        private bool _isWalking, _isShooting;
+        private bool _isShooting;
+        private Range<float> _xRange = new(-0.75f, 0.75f);
 
-        public void Walk(Vector2 direction)
+        public void OnJump()
         {
-            if (direction == Vector2.zero)
+        }
+
+        public void OnTouchGround()
+        {
+        }
+
+        public void OnStartShooting()
+        {
+            _isShooting = true;
+            PlayAnimation();
+        }
+
+        public void OnStopShooting()
+        {
+            _isShooting = false;
+            PlayAnimation();
+        }
+
+        public void OnHit()
+        {
+            animator.Play("Hit");
+        }
+
+        public void OnMove()
+        {
+            PlayAnimation();
+        }
+
+        public void PlayAnimation()
+        {
+            if (direction.Value.x is > 0f or < 0f)
             {
-                animator.Play(_isShooting ? "Idle Shooting" : "Idle");
-                _isWalking = false;
+                if (_isShooting)
+                {
+                    if (IsPointingUp()) animator.Play("Walk");
+                    else animator.Play("Walk Shooting Forward");
+                }
+                else
+                {
+                    animator.Play("Walk");
+                }
             }
             else
             {
-                animator.Play(_isShooting ? "Walk Shooting" : "Walk");
-                _isWalking = true;
+                if (_isShooting)
+                {
+                    if (IsPointingUp()) animator.Play("Idle Shooting Upward");
+                    else animator.Play("Idle Shooting Forward");
+                }
+                else
+                {
+                    animator.Play("Idle");
+                }
             }
         }
 
-        public void StartShooting()
+        private bool IsPointingUp()
         {
-            animator.Play(_isWalking ? "Walk Shooting" : "Idle Shooting");
-            _isShooting = true;
-        }
-
-        public void StopShooting()
-        {
-            animator.Play(_isWalking ? "Walk" : "Idle");
-            _isShooting = false;
-        }
-
-        public void Hit()
-        {
-            animator.Play("Hit");
+            return direction.Value.y > 0.75f && _xRange.IsInRange(direction.Value.x);
         }
     }
 }
