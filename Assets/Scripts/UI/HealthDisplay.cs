@@ -37,6 +37,7 @@ namespace UI
             healthImage.sprite = sprites[index];
             
             backgroundImage.material.SetInt("_isGlowing", 1);
+            transform.DOKill();
             transform.
                 DOScale(transform.localScale * animationScale.Value, animationTime.Value).
                 SetEase(animationEase).

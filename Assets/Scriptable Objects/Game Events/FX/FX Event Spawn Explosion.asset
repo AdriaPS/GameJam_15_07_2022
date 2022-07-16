@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc38fca41eea4187a15e471ca62e05f0, type: 3}
-  m_Name: Player Healing Points
+  m_Script: {fileID: 11500000, guid: c2b412cc60f14455a98478edef23ae82, type: 3}
+  m_Name: FX Event Spawn Explosion
   m_EditorClassIdentifier: 
   details:
     title: 
     description: 
     author: 
-  value: 89
-  readOnly: 0
