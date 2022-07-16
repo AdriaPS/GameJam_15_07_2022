@@ -39,6 +39,7 @@ namespace UI
                 DOScale(transform.localScale * animationScale.Value, animationTime.Value).
                 SetEase(animationEase).
                 SetLoops(2, LoopType.Yoyo);
+            transform.DOShakePosition(animationTime.Value, Vector2.one * 30, 50);
         }
     }
 }
