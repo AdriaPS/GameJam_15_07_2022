@@ -24,15 +24,19 @@ namespace Combat
         private void Awake()
         {
             currentHealth.Value = initialHealth.Value;
+            CanTakeDamage = true;
         }
 
         private void OnEnable()
         {
             currentHealth.Value = initialHealth.Value;
+            CanTakeDamage = true;
         }
 
         public void TakeDamage(float amount, Transform source)
         {
+            if (!CanTakeDamage) return;
+            
             currentHealth.Value -= amount;
             
             if (currentHealth.Value <= 0)
@@ -55,5 +59,7 @@ namespace Combat
                     onRecoilFinished?.Invoke();
                 });
         }
+
+        public bool CanTakeDamage { get; set; }
     }
 }
