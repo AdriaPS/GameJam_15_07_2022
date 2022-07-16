@@ -80,6 +80,9 @@
         },
         {
             "m_Id": "97ba1910555e46a7b137a2a6dc7665ac"
+        },
+        {
+            "m_Id": "82c96976cc2949558832955846037037"
         }
     ],
     "m_GroupDatas": [],
@@ -313,6 +316,9 @@
             },
             {
                 "m_Id": "97ba1910555e46a7b137a2a6dc7665ac"
+            },
+            {
+                "m_Id": "82c96976cc2949558832955846037037"
             }
         ]
     },
@@ -742,6 +748,12 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalUnlitSubTarget",
+    "m_ObjectId": "4186cc10a5924c63940c42035c919932"
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.CategoryData",
     "m_ObjectId": "41c63050e29544c695ca2e9ac36f588b",
     "m_Name": "",
@@ -1009,9 +1021,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1093.0,
-            "y": 358.0,
-            "width": 208.0,
+            "x": -1060.0001220703125,
+            "y": 350.0,
+            "width": 208.00006103515626,
             "height": 302.0
         }
     },
@@ -1488,10 +1500,43 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.BlockNode",
+    "m_ObjectId": "82c96976cc2949558832955846037037",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "SurfaceDescription.AlphaClipThreshold",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 0.0,
+            "y": 0.0,
+            "width": 0.0,
+            "height": 0.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "ed9bb9d733f04d56a1e692dad580676f"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_SerializedDescriptor": "SurfaceDescription.AlphaClipThreshold"
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "84715a140188400f854c428f322de2e7",
     "m_Id": 0,
-    "m_DisplayName": "Speed",
+    "m_DisplayName": "FlickeringSpeed",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -1611,7 +1656,7 @@
     "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalTarget",
     "m_ObjectId": "98eb4e97b92f435d867b96f21508032f",
     "m_ActiveSubTarget": {
-        "m_Id": "b9d4a4e7ce564e51a215e924dd931155"
+        "m_Id": "4186cc10a5924c63940c42035c919932"
     },
     "m_AllowMaterialOverride": false,
     "m_SurfaceType": 0,
@@ -1772,12 +1817,6 @@
     "useTilingAndOffset": false,
     "m_Modifiable": true,
     "m_DefaultType": 0
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalSpriteUnlitSubTarget",
-    "m_ObjectId": "b9d4a4e7ce564e51a215e924dd931155"
 }
 
 {
@@ -1994,6 +2033,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "ed9bb9d733f04d56a1e692dad580676f",
+    "m_Id": 0,
+    "m_DisplayName": "Alpha Clip Threshold",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "AlphaClipThreshold",
+    "m_StageCapability": 2,
+    "m_Value": 0.5,
+    "m_DefaultValue": 0.5,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "f6a2c58e844248ca9098481ed48401bb",
     "m_Group": {
@@ -2004,10 +2058,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1118.0,
-            "y": 690.0000610351563,
-            "width": 136.00006103515626,
-            "height": 34.00006103515625
+            "x": -902.0,
+            "y": 676.0,
+            "width": 136.0,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -2058,10 +2112,10 @@
     "m_Guid": {
         "m_GuidSerialized": "5f978816-5d68-4a47-8c90-872b952afcf7"
     },
-    "m_Name": "Speed",
+    "m_Name": "FlickeringSpeed",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Speed",
-    "m_DefaultReferenceName": "_Speed",
+    "m_RefNameGeneratedByDisplayName": "FlickeringSpeed",
+    "m_DefaultReferenceName": "_FlickeringSpeed",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,

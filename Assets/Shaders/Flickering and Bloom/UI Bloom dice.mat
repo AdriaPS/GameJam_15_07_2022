@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI Bloom
+  m_Name: UI Bloom dice
   m_Shader: {fileID: -6465566751694194690, guid: d5a9ca82e0ff7864c9c3ae22a5f8b36c, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -21,7 +21,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 70df86ef557fa024091e80711918495b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -38,13 +38,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _FlickeringSpeed: 4
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Speed: 4
     - _isFlickering: 0
     - _isGlowing: 0
     m_Colors:
-    - _Color: {r: 3.735849, g: 3.542008, b: 3.542008, a: 0}
+    - _Color: {r: 5.656854, g: 5.656854, b: 5.656854, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2907862024332902360
 MonoBehaviour:
