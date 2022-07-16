@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Wave
 {
-    public int numEnemies;
+    public int numEnemies; 
 }
 
 public class WaveManager : MonoBehaviour

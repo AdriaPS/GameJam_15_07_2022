@@ -6,17 +6,17 @@ using UnityEngine;
 
 public class Melee_Shield : MonoBehaviour
 {
-    public Variable<float> speed;
+    public float speed;
 
     void FixedUpdate()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(speed.Value * Time.deltaTime, 0);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(speed * Time.deltaTime, 0);
     }
 
     public void RotateEnemy()
     {
         transform.Rotate(0, 180, 0);
-        speed.Value *= -1.0f;
+        speed *= -1.0f;
     }
 }
 
