@@ -1,5 +1,4 @@
-﻿using Codetox.Misc;
-using Codetox.Variables;
+﻿using Codetox.Variables;
 using UnityEngine;
 
 namespace Player
@@ -7,72 +6,50 @@ namespace Player
     public class PlayerAnimationController : MonoBehaviour
     {
         [SerializeField] private Animator animator;
+        [SerializeField] private new Rigidbody2D rigidbody2D;
         [SerializeField] private Variable<Vector2> direction;
 
-        private bool _isShooting;
-        private Range<float> _xRange = new(-0.75f, 0.75f);
+        public bool IsGrounded { get; set; }
+        public bool IsShooting { get; set; }
 
-        public void OnJump()
+        private void Update()
         {
-        }
+            string animation;
 
-        public void OnTouchGround()
-        {
-        }
-
-        public void OnStartShooting()
-        {
-            _isShooting = true;
-            PlayAnimation();
-        }
-
-        public void OnStopShooting()
-        {
-            _isShooting = false;
-            PlayAnimation();
-        }
-
-        public void OnHit()
-        {
-            animator.Play("Hit");
-        }
-
-        public void OnMove()
-        {
-            PlayAnimation();
-        }
-
-        public void PlayAnimation()
-        {
-            if (direction.Value.x is > 0f or < 0f)
+            if (IsGrounded)
             {
-                if (_isShooting)
+                if (direction.Value.x is > 0 or < 0)
                 {
-                    if (IsPointingUp()) animator.Play("Walk");
-                    else animator.Play("Walk Shooting Forward");
+                    if (IsShooting)
+                    {
+                        if (direction.Value.y > 0.75f) animation = "Walk";
+                        else animation = "Walk Shooting Forward";
+                    }
+                    else
+                    {
+                        animation = "Walk Shooting Forward";
+                    }
                 }
                 else
                 {
-                    animator.Play("Walk");
+                    if (IsShooting)
+                    {
+                        if (direction.Value.y > 0.75f) animation = "Idle Shooting Upward";
+                        else animation = "Idle Shooting Forward";
+                    }
+                    else
+                    {
+                        animation = "Idle Shooting Forward";
+                    }
                 }
             }
             else
             {
-                if (_isShooting)
-                {
-                    if (IsPointingUp()) animator.Play("Idle Shooting Upward");
-                    else animator.Play("Idle Shooting Forward");
-                }
-                else
-                {
-                    animator.Play("Idle");
-                }
+                if (rigidbody2D.velocity.y > 0f) animation = "Jump";
+                else animation = "Fall";
             }
-        }
 
-        private bool IsPointingUp()
-        {
-            return direction.Value.y > 0.75f && _xRange.IsInRange(direction.Value.x);
+            animator.Play(animation);
         }
     }
 }
