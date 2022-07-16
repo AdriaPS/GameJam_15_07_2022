@@ -1,39 +1,51 @@
-﻿using Codetox.Misc;
-using Codetox.Pooling;
+﻿using Codetox.Core;
+using Codetox.Misc;
 using Codetox.Variables;
 using UnityEngine;
 
 namespace Player
 {
-    public class ShootingController: MonoBehaviour
+    public class ShootingController : MonoBehaviour
     {
-        [SerializeField] private Transform playerTransform;
+        [SerializeField] private Transform shootingSourceRight;
+        [SerializeField] private Transform shootingSourceUp;
         [SerializeField] private ValueReference<Vector2> direction;
         [SerializeField] private ValueReference<float> bulletsPerSecond;
-        [SerializeField] private GameObjectPool bulletPool;
+        [SerializeField] private GameObject bulletPrefab;
 
-        private Range<float> xRange = new(-0.75f, 0.75f);
+        private CoroutineBuilder _shootingCoroutine;
+
+        private Range<float> _xRange = new(-0.75f, 0.75f);
+
+        private void Awake()
+        {
+            _shootingCoroutine = gameObject.Coroutine(cancelOnDisable: true, destroyOnFinish: false).Invoke(Shoot).WaitForSeconds(1 / bulletsPerSecond.Value)
+                .While(() => true);
+        }
+
+        public void StartShooting()
+        {
+            _shootingCoroutine.Run();
+        }
+
+        public void StopShooting()
+        {
+            _shootingCoroutine.Cancel();
+        }
 
         public void Shoot()
         {
-            if (IsPointingUp())
-            {
-                ShootBullet(playerTransform.up);
-            }
-            else
-            {
-                ShootBullet(playerTransform.forward);
-            }
+            ShootBullet(IsPointingUp() ? shootingSourceUp : shootingSourceRight);
         }
-        
-        private void ShootBullet(Vector3 dir)
+
+        private void ShootBullet(Transform source)
         {
-            var bullet = bulletPool.Get();
+            Instantiate(bulletPrefab, source.position, source.rotation);
         }
 
         private bool IsPointingUp()
         {
-            return direction.Value.y > 0f && xRange.IsInRange(direction.Value.x);
+            return direction.Value.y > 0.75f && _xRange.IsInRange(direction.Value.x);
         }
     }
 }
