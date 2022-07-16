@@ -33,5 +33,10 @@ namespace Player
             animator.Play(_isWalking ? "Walk" : "Idle");
             _isShooting = false;
         }
+
+        public void Hit()
+        {
+            animator.Play("Hit");
+        }
     }
 }

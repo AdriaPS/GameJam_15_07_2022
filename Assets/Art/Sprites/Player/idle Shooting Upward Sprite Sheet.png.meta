@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 817e8d422791cd940ba4c8a930feca07
+guid: 6475079bea3a1334e9b47a9ee0ea3d68
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bullet_0
+      name: idle Shooting Upward Sprite Sheet_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 74
-        width: 164
-        height: 126
+        x: 0
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b835911a3ea53442be7ae6fafd61838
-      internalID: 662516938
+      spriteID: 139852d6a05a1f74fbe9852075f135b7
+      internalID: 322609779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bullet_1
+      name: idle Shooting Upward Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 251
-        y: 90
-        width: 119
-        height: 96
+        x: 1000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3465f588725b704bb09290d8f015e5e
-      internalID: -1645342298
+      spriteID: 549e2429c64dcf443a7be64ff0ae0e1e
+      internalID: 274052013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bullet_2
+      name: idle Shooting Upward Sprite Sheet_2
       rect:
         serializedVersion: 2
-        x: 436
-        y: 100
-        width: 152
-        height: 85
+        x: 2000
+        y: 1000
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,8 +160,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64922bbb54df0054c889b77f94f21b61
-      internalID: -1153219922
+      spriteID: 140d0b32009189e44a3259a37cf9050b
+      internalID: -1192360018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle Shooting Upward Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b3c53d1177f4b4e96e022a904fa933
+      internalID: -1269540082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle Shooting Upward Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80513e2a070b9e442b277258d2183053
+      internalID: -941800657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle Shooting Upward Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e9b998b0a683e4c99775bc7a8f4120
+      internalID: -319706098
       vertices: []
       indices: 
       edges: []
@@ -177,9 +240,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bullet_2: -1153219922
-      bullet_0: 662516938
-      bullet_1: -1645342298
+      idle Shooting Upward Sprite Sheet_2: -1192360018
+      idle Shooting Upward Sprite Sheet_4: -941800657
+      idle Shooting Upward Sprite Sheet_1: 274052013
+      idle Shooting Upward Sprite Sheet_0: 322609779
+      idle Shooting Upward Sprite Sheet_3: -1269540082
+      idle Shooting Upward Sprite Sheet_5: -319706098
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
