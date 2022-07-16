@@ -45,7 +45,7 @@ Material:
     - _isFlickering: 0
     - _isGlowing: 0
     m_Colors:
-    - _Color: {r: 5.656854, g: 5.656854, b: 5.656854, a: 0}
+    - _Color: {r: 11.984314, g: 11.984314, b: 11.984314, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2907862024332902360
 MonoBehaviour:
