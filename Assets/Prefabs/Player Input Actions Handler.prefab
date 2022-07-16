@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3117416977513808281}
   - component: {fileID: 5155086119740047938}
   - component: {fileID: 7531313586330053133}
+  - component: {fileID: 6659754152099195100}
   m_Layer: 0
   m_Name: Player Input Actions Handler
   m_TagString: Untagged
@@ -99,3 +100,19 @@ MonoBehaviour:
   onActionStartedEvent: {fileID: 0}
   onActionPerformedEvent: {fileID: 11400000, guid: f897f83a7a178964daf75f620baa70cf, type: 2}
   onActionCanceledEvent: {fileID: 11400000, guid: 47b35288a66d70346a3e7af2f7e9de61, type: 2}
+--- !u!114 &6659754152099195100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569655436782684979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32ba07ba81b94734b1a6d840a7deebd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputActionReference: {fileID: -771483372343918779, guid: c696248c5b79e924698aac7dd178c058, type: 3}
+  onActionStartedEvent: {fileID: 0}
+  onActionPerformedEvent: {fileID: 11400000, guid: 8bed4875214df6d468ec8741d3f524b7, type: 2}
+  onActionCanceledEvent: {fileID: 0}

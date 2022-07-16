@@ -122,10 +122,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef6176dc9fd4b5da4c595c807b19172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidbody: {fileID: 4327415508726358876}
   damage:
     useField: 1
-    fieldValue: 0
+    fieldValue: 1
     variableValue: {fileID: 0}
   speed:
     useField: 1
@@ -135,6 +134,7 @@ MonoBehaviour:
     useField: 1
     fieldValue: 5
     variableValue: {fileID: 0}
+  rigidbody: {fileID: 4327415508726358876}
   randomAngle:
     min: -5
     max: 5

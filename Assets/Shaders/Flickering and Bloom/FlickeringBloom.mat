@@ -61,7 +61,7 @@ Material:
     - _EnableExternalAlpha: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Speed: 15
+    - _Speed: 25
     - _isFlickering: 0
     - _isGlowing: 0
     m_Colors:

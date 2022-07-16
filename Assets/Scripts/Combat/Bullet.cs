@@ -23,7 +23,7 @@ namespace Combat
 
         public void Hit(GameObject obj)
         {
-            obj.Send<IDamageTaker>(damageTaker => damageTaker.TakeDamage(damage.Value));
+            obj.Send<IDamageTaker>(damageTaker => damageTaker.TakeDamage(damage.Value, transform));
             Destroy(gameObject);
         }
     }

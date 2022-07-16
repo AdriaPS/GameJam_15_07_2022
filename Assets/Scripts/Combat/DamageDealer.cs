@@ -10,7 +10,7 @@ namespace Combat
 
         public void DealDamage(IDamageTaker taker)
         {
-            taker.TakeDamage(damage.Value);
+            taker.TakeDamage(damage.Value, transform);
         }
 
         public void DealDamage(GameObject obj)
