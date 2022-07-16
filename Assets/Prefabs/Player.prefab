@@ -319,7 +319,7 @@ MonoBehaviour:
   onEnterState:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4988275794804270549}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player.PlayerAnimationController, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 1
@@ -406,7 +406,7 @@ MonoBehaviour:
   unityEventResponse:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4988275794804270549}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player.PlayerAnimationController, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 1
@@ -434,7 +434,7 @@ MonoBehaviour:
   unityEventResponse:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4988275794804270549}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player.PlayerAnimationController, Assembly-CSharp
         m_MethodName: OnStartShooting
         m_Mode: 1
@@ -462,7 +462,7 @@ MonoBehaviour:
   unityEventResponse:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4988275794804270549}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player.PlayerAnimationController, Assembly-CSharp
         m_MethodName: OnStopShooting
         m_Mode: 1
@@ -589,7 +589,7 @@ MonoBehaviour:
   initialHealth:
     useField: 0
     fieldValue: 0
-    variableValue: {fileID: 11400000, guid: 7672bba60860dec4aa79e57afdf8204a, type: 2}
+    variableValue: {fileID: 11400000, guid: 48e63cc11bcb1be4a9e386d1a8d1d59b, type: 2}
   currentHealth:
     useField: 0
     fieldValue: 0
@@ -729,7 +729,6 @@ GameObject:
   - component: {fileID: 2472598304076859957}
   - component: {fileID: 2472598304076859956}
   - component: {fileID: 2472598304076859955}
-  - component: {fileID: 4988275794804270549}
   m_Layer: 9
   m_Name: View
   m_TagString: Untagged
@@ -824,20 +823,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4988275794804270549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2472598304076859958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1958654a59b4cf7bfa0d65714dfe6d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 2472598304076859955}
-  direction: {fileID: 11400000, guid: 0d82626a7292db949b3afbb55d664bc8, type: 2}
 --- !u!1 &2472598304629685895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,7 +1688,7 @@ MonoBehaviour:
   onEnterState:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4988275794804270549}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player.PlayerAnimationController, Assembly-CSharp
         m_MethodName: OnHit
         m_Mode: 1
