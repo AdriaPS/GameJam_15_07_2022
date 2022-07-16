@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 5803221063324118734}
   - component: {fileID: 5803221063324118735}
   m_Layer: 0
-  m_Name: DiceEnemy
+  m_Name: Dice Enemy Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
