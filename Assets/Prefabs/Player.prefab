@@ -307,7 +307,20 @@ MonoBehaviour:
     variableValue: {fileID: 11400000, guid: 884ffcdb6bf582741b3ebcd21e4b372c, type: 2}
   onHeal:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 0f7cea0ab6922fd45825450a883ea6bc, type: 2}
+        m_TargetAssemblyTypeName: Codetox.GameEvents.GameEvent`1[[UnityEngine.GameObject,
+          UnityEngine
+        m_MethodName: Invoke
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2472598303971787007}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &766877412069816139
 MonoBehaviour:
   m_ObjectHideFlags: 0
