@@ -1,4 +1,5 @@
-﻿using Codetox.Core;
+﻿using System;
+using Codetox.Core;
 using Codetox.Variables;
 using DG.Tweening;
 using UnityEngine;
@@ -14,9 +15,15 @@ namespace Player
         [SerializeField] private ValueReference<float> cooldown;
         [SerializeField] private Ease ease;
 
+        public UnityEvent onDash;
         public UnityEvent onFinished;
 
         private bool _isDashing, _isReady = true;
+
+        private void OnEnable()
+        {
+            Dash();
+        }
 
         private void Update()
         {
@@ -37,6 +44,8 @@ namespace Player
                 _isDashing = false;
                 rigidbody.gameObject.Coroutine().WaitForSeconds(cooldown.Value).Invoke(() => _isReady = true).Run();
             });
+            
+            onDash?.Invoke();
         }
     }
 }

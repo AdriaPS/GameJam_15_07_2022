@@ -75,5 +75,9 @@ PrefabInstance:
       propertyPath: speed.fieldValue
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 5626924384505165601, guid: c1a9e5543a2b63645987de932092001d, type: 3}
+      propertyPath: lifetime.fieldValue
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1a9e5543a2b63645987de932092001d, type: 3}

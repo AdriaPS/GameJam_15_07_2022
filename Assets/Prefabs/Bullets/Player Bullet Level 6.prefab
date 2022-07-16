@@ -145,7 +145,7 @@ MonoBehaviour:
     variableValue: {fileID: 0}
   lifetime:
     useField: 1
-    fieldValue: 5
+    fieldValue: 10
     variableValue: {fileID: 0}
   rigidbody: {fileID: 4327415508726358876}
   randomAngle:
