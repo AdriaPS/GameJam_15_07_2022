@@ -31,7 +31,7 @@ public class Shooter_Enemy : MonoBehaviour
         Instantiate(bullet, shootingPoint);
     }
 
-    public void CancelInvoke()
+    public void CancelInvokeAttack()
     {
         CancelInvoke("Attack");
     }

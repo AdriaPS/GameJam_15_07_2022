@@ -354,7 +354,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5425150720387491862}
         m_TargetAssemblyTypeName: Shooter_Enemy, Assembly-CSharp
-        m_MethodName: CancelInvoke
+        m_MethodName: CancelInvokeAttack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
