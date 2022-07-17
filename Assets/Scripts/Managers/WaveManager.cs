@@ -62,8 +62,8 @@ public class WaveManager : MonoBehaviour
 
     void SpawnWave()
     {
-        wave = new Wave(5 + enemiesIncrease.Value, 30 + timeIncrease.Value);
-        enemiesIncrease.Value += 3;
+        wave = new Wave(5 + enemiesIncrease.Value, 20 + timeIncrease.Value);
+        enemiesIncrease.Value += 5;
         timeIncrease.Value += 10.0f;
         totalWaves.Value += 1;
         StartCoroutine(SpawnEnemies());
@@ -89,7 +89,6 @@ public class WaveManager : MonoBehaviour
                     Instantiate(enemy, randomPoint3.position, randomPoint3.rotation);
                     break;
             }
-
             yield return new WaitForSeconds(wave.waveDuration / (2 * wave.numEnemies));
         }
     }

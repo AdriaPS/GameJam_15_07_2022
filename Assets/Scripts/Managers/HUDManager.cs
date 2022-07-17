@@ -27,9 +27,12 @@ public class HUDManager : MonoBehaviour
     
     public string FormatTime()
     {
-        int minutes = (int) gameTime.Value / 60 / 60 ;
-        int seconds = (int) gameTime.Value / 60;
-        int milliseconds = (int) gameTime.Value;
-        return string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, milliseconds );
+        int intTime = (int)gameTime.Value;
+        int minutes = intTime / 60;
+        int seconds = intTime % 60;
+        float milliseconds = gameTime.Value * 1000;
+        milliseconds = milliseconds % 1000;
+        //return string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, milliseconds);
+        return string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
