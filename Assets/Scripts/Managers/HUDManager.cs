@@ -9,20 +9,36 @@ public class HUDManager : MonoBehaviour
 {
     public Variable<float> gameTime;
     public TextMeshProUGUI timeText;
+    public Variable<int> scorePoints;
+    public TextMeshProUGUI scoreText;
+    public Variable<int> waveCount;
+    public TextMeshProUGUI waveCountText;
 
     void OnEnable()
     {
         gameTime.OnValueChanged += UpdateScreenValue;
+        scorePoints.OnValueChanged += UpdateScreenValueInt;
+        waveCount.OnValueChanged += UpdateScreenValueInt;
+        scoreText.text = "Score: " + scorePoints.Value;
+        waveCountText.text = "Wave Count: " + waveCount.Value;
     }
 
     private void OnDisable()
     {
         gameTime.OnValueChanged -= UpdateScreenValue;
+        scorePoints.OnValueChanged -= UpdateScreenValueInt;
+        waveCount.OnValueChanged -= UpdateScreenValueInt;
     }
 
     private void UpdateScreenValue(float obj)
     {
         timeText.text = FormatTime();
+    }
+    
+    private void UpdateScreenValueInt(int obj)
+    {
+        scoreText.text = "Score: " + scorePoints.Value;
+        waveCountText.text = "Wave Count: " + waveCount.Value;
     }
     
     public string FormatTime()

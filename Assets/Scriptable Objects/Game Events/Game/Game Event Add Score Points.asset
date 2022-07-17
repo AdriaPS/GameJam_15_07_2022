@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc38fca41eea4187a15e471ca62e05f0, type: 3}
-  m_Name: Waves Time Duration Increase
+  m_Script: {fileID: 11500000, guid: e29d82a4b884456b83384373266f6204, type: 3}
+  m_Name: Game Event Add Score Points
   m_EditorClassIdentifier: 
   details:
     title: 
     description: 
     author: 
-  value: 15
-  readOnly: 0
