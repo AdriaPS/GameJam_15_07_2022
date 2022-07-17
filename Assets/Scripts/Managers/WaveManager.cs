@@ -35,6 +35,7 @@ public class WaveManager : MonoBehaviour
     {
         timeIncrease.Value = 0.0f;
         enemiesIncrease.Value = 0;
+        totalTime.Value = 0.0f;
         totalWaves.Value = 0;
         SpawnWave();
     }
