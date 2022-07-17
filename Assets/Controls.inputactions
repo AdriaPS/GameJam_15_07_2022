@@ -176,7 +176,7 @@
                 {
                     "name": "",
                     "id": "16e29acc-feef-43b9-ad5d-458d66b33fee",
-                    "path": "<Mouse>/rightButton",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard & Mouse",
@@ -191,6 +191,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
+                    "action": "Heal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "66b95a5b-db81-4ed5-ae94-aa1cd3b64d52",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
                     "action": "Heal",
                     "isComposite": false,
                     "isPartOfComposite": false
