@@ -203,7 +203,7 @@ MonoBehaviour:
     useField: 1
     fieldValue:
       serializedVersion: 2
-      m_Bits: 8769
+      m_Bits: 25153
     variableValue: {fileID: 0}
   detectionStrategy: -1
   onCollisionEnter:
