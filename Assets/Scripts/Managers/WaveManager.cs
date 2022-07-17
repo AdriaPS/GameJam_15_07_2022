@@ -5,7 +5,6 @@ using Codetox.Variables;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-[System.Serializable]
 public class Wave
 {
     public int numEnemies;
@@ -35,8 +34,8 @@ public class WaveManager : MonoBehaviour
 
     void Awake()
     {
-        timeIncrease.Value = 0.0f;
-        enemiesIncrease.Value = 0;
+        timeIncrease.Value = 15f;
+        enemiesIncrease.Value = 5;
         totalTime.Value = 0.0f;
         totalWaves.Value = 0;
         SpawnWave();
@@ -77,13 +76,40 @@ public class WaveManager : MonoBehaviour
 
     void SpawnWave()
     {
-        wave = new Wave(5 + enemiesIncrease.Value, 20 + timeIncrease.Value);
+        wave = new Wave(enemiesIncrease.Value, timeIncrease.Value);
         enemiesIncrease.Value += 5;
-        timeIncrease.Value += 10.0f;
         totalWaves.Value += 1;
-        StartCoroutine(SpawnEnemies());
+        if (totalTime.Value < 90)
+        { 
+            var randomPoint3 = skyPoints[Random.Range(0, skyPoints.Length)];
+            Instantiate(typesEnemies[2], randomPoint3.position, randomPoint3.rotation);
+            StartCoroutine(SpawnEnemiesBefore3());
+        }
+        else
+        {
+            StartCoroutine(SpawnEnemies());
+        }
     }
 
+    IEnumerator SpawnEnemiesBefore3()
+    {
+        for (int i = 0; i < wave.numEnemies-1; i++)
+        {
+            GameObject enemy = typesEnemies[Random.Range(0, typesEnemies.Length-1)];
+            switch (enemy.tag)
+            {
+                case "melee":
+                    var randomPoint = groundPoints[Random.Range(0, groundPoints.Length)];
+                    Instantiate(enemy, randomPoint.position, randomPoint.rotation);
+                    break;
+                case "shooter":
+                    var randomPoint2 = shootingPoints[Random.Range(0, shootingPoints.Length)];
+                    Instantiate(enemy, randomPoint2.position, randomPoint2.rotation);
+                    break;
+            }
+            yield return new WaitForSeconds(wave.waveDuration / (2 * wave.numEnemies));
+        }
+    }
     IEnumerator SpawnEnemies()
     {
         for (int i = 0; i < wave.numEnemies; i++)

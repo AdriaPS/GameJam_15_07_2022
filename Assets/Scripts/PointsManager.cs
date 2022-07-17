@@ -8,6 +8,11 @@ public class PointsManager : MonoBehaviour
 {
     public Variable<int> scorePoints;
 
+    private void OnEnable()
+    {
+        scorePoints.Value = 0;
+    }
+
     public void AddPoints(int points)
     {
         scorePoints.Value += points;
