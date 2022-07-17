@@ -171,23 +171,74 @@ MonoBehaviour:
     fieldValue: 0
     variableValue: {fileID: 0}
   recoilDistance:
-    useField: 1
+    useField: 0
     fieldValue: 0
-    variableValue: {fileID: 0}
+    variableValue: {fileID: 11400000, guid: fe71a6f25f3c0014b9e6e8b5f72149dd, type: 2}
   recoilTime:
-    useField: 1
+    useField: 0
     fieldValue: 0
-    variableValue: {fileID: 0}
+    variableValue: {fileID: 11400000, guid: c08aff29f63d18145ac24b466541d923, type: 2}
   recoilEase: 0
   onHit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8460694867034330531}
+        m_TargetAssemblyTypeName: FX.HitFXController, Assembly-CSharp
+        m_MethodName: DoFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 8acf64c954587a34a987f5771adc7676, type: 2}
+        m_TargetAssemblyTypeName: Codetox.GameEvents.GameEvent`1[[UnityEngine.GameObject,
+          UnityEngine
+        m_MethodName: Invoke
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5425150720387491858}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRecoilFinished:
     m_PersistentCalls:
       m_Calls: []
   onDie:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 11400000, guid: 8acf64c954587a34a987f5771adc7676, type: 2}
+        m_TargetAssemblyTypeName: Codetox.GameEvents.GameEvent`1[[UnityEngine.GameObject,
+          UnityEngine
+        m_MethodName: Invoke
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5425150720387491858}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e63c7ebb53bdffe4bb98f33b56e18677, type: 2}
+        m_TargetAssemblyTypeName: Codetox.GameEvents.GameEvent`1[[UnityEngine.GameObject,
+          UnityEngine
+        m_MethodName: Invoke
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5425150720387491858}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 5425150720387491858}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -240,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c395c8761fe4939a9c7a856cd19355b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 5425150720387491860}
   glowingTime:
     useField: 0
     fieldValue: 0
