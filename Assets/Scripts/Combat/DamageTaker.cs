@@ -47,15 +47,15 @@ namespace Combat
             
             onHit?.Invoke();
 
-            rigidbody2D.isKinematic = true;
-            rigidbody2D.collisionDetectionMode = CollisionDetectionMode2D.Discrete;
+            // rigidbody2D.isKinematic = true;
+            // rigidbody2D.collisionDetectionMode = CollisionDetectionMode2D.Discrete;
             rigidbody2D.
                 DOMove(rigidbody2D.position + (Vector2)(source.DirectionTo(rigidbody2D.position) * recoilDistance.Value), recoilTime.Value).
                 SetEase(recoilEase).
                 OnComplete(() =>
                 {
-                    rigidbody2D.isKinematic = false;
-                    rigidbody2D.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+                    // rigidbody2D.isKinematic = false;
+                    // rigidbody2D.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
                     onRecoilFinished?.Invoke();
                 });
         }

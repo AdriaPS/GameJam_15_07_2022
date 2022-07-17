@@ -91,7 +91,7 @@ MonoBehaviour:
   playerPosition: {fileID: 11400000, guid: 5924296b3fdfa074a807ef79fef320cc, type: 2}
   distanceToPlayer:
     useField: 1
-    fieldValue: 15
+    fieldValue: 12
     variableValue: {fileID: 0}
   smoothTime:
     useField: 1

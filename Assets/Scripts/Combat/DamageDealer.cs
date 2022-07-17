@@ -15,7 +15,7 @@ namespace Combat
 
         public void DealDamage(GameObject obj)
         {
-            obj.Send<IDamageTaker>(DealDamage, MessageScope.Children);
+            obj.Send<IDamageTaker>(DealDamage);
         }
     }
 }
