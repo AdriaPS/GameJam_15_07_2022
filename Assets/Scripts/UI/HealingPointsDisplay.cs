@@ -3,6 +3,7 @@ using System.Linq;
 using Codetox.Variables;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace UI
@@ -15,6 +16,8 @@ namespace UI
         [SerializeField] private ValueReference<float> animationScale;
         [SerializeField] private ValueReference<float> animationTime;
         [SerializeField] private Ease animationEase;
+
+        public UnityEvent onRemoveHealingPoint;
 
         private readonly List<GameObject> _icons = new();
 
@@ -77,6 +80,8 @@ namespace UI
                     Destroy(o);
                 });
             backgroundImage.transform.DOShakePosition(animationTime.Value, Vector2.one * 30, 50);
+            
+            onRemoveHealingPoint?.Invoke();
         }
     }
 }

@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 1478818828419557242}
   - component: {fileID: 8419695545450434724}
   - component: {fileID: 5626924384505165601}
+  - component: {fileID: 1689486312046645387}
   m_Layer: 12
   m_Name: Enemy Bullet
   m_TagString: Untagged
@@ -147,6 +148,7 @@ Transform:
   m_Children:
   - {fileID: 940683943678017515}
   - {fileID: 9031392753725739123}
+  - {fileID: 821848528825958711}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -265,6 +267,33 @@ MonoBehaviour:
   randomAngle:
     min: -5
     max: 5
+--- !u!114 &1689486312046645387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3474952233683085250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d09acc0a631a42c79b7bcb57fdc144c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onEnable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 792637476301245769}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: b4e2b48caeb6d0645aaa4e1d3ba283e5, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6453477323301426689
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,3 +642,70 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!1001 &3349763541198803388
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5332076820148324481}
+    m_Modifications:
+    - target: {fileID: 1361252386602166196, guid: 64e9e635b33c1184c8883dbdc4ebefcb, type: 3}
+      propertyPath: m_Name
+      value: Spatial Audio Source
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673742694683824267, guid: 64e9e635b33c1184c8883dbdc4ebefcb, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673742694683824267, guid: 64e9e635b33c1184c8883dbdc4ebefcb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673742694683824267, guid: 64e9e635b33c1184c8883dbdc4ebefcb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673742694683824267, guid: 64e9e635b33c1184c8883dbdc4ebefcb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673742694683824267, guid: 64e9e635b33c1184c8883dbdc4ebefcb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673742694683824267, guid: 64e9e635b33c1184c8883dbdc4ebefcb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673742694683824267, guid: 64e9e635b33c1184c8883dbdc4ebefcb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673742694683824267, guid: 64e9e635b33c1184c8883dbdc4ebefcb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673742694683824267, guid: 64e9e635b33c1184c8883dbdc4ebefcb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673742694683824267, guid: 64e9e635b33c1184c8883dbdc4ebefcb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673742694683824267, guid: 64e9e635b33c1184c8883dbdc4ebefcb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64e9e635b33c1184c8883dbdc4ebefcb, type: 3}
+--- !u!82 &792637476301245769 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2701248988479003893, guid: 64e9e635b33c1184c8883dbdc4ebefcb, type: 3}
+  m_PrefabInstance: {fileID: 3349763541198803388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &821848528825958711 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2673742694683824267, guid: 64e9e635b33c1184c8883dbdc4ebefcb, type: 3}
+  m_PrefabInstance: {fileID: 3349763541198803388}
+  m_PrefabAsset: {fileID: 0}

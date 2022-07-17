@@ -1,5 +1,7 @@
 ﻿using Codetox.Variables;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Player
 {
@@ -10,6 +12,8 @@ namespace Player
         [SerializeField] private ValueReference<float> maxHeight;
         [SerializeField] private ValueReference<float> apexTime;
         [SerializeField] private ValueReference<int> jumpAmount;
+
+        public UnityEvent onJump;
 
         private float _gravity, _maxVelocity, _minVelocity;
         private bool _isGrounded, _isJumping;
@@ -42,6 +46,7 @@ namespace Player
         {
             if (_jumpsLeft <= 0) return;
             rigidbody.velocity = new Vector2(rigidbody.velocity.x, _maxVelocity);
+            onJump?.Invoke();
             _isJumping = true;
             _jumpsLeft--;
         }

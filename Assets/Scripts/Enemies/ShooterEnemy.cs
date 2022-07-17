@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Codetox.Core;
 using Codetox.Variables;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ShooterEnemy : MonoBehaviour
 {
