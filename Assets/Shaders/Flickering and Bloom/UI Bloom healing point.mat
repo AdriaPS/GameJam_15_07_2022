@@ -42,10 +42,14 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Speed: 4
+    - _TintIntensity: 0
     - _isFlickering: 0
     - _isGlowing: 0
+    - _isTinted: 0
     m_Colors:
     - _Color: {r: 11.984314, g: 11.984314, b: 11.984314, a: 0}
+    - _GlowingColor: {r: 3.735849, g: 3.542008, b: 3.542008, a: 0}
+    - _TintColor: {r: 0.9150943, g: 0.2892043, b: 0.2892043, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2907862024332902360
 MonoBehaviour:
