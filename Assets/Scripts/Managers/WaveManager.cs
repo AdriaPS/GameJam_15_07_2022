@@ -13,6 +13,7 @@ public class Wave
 public class WaveManager : MonoBehaviour
 {
     public Transform[] groundPoints;
+    public Transform[] shootingPoints;
     public Transform[] skyPoints;
     public Wave[] waves;
     public GameObject[] typesEnemies;
