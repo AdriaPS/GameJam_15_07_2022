@@ -26,6 +26,8 @@ public class WaveManager : MonoBehaviour
     public Wave wave;
     public GameObject[] typesEnemies;
     public GameObject[] spikes;
+    public int totalSpikes;
+    public float spikeTime;
     public Variable<float> timeIncrease;
     public Variable<int> enemiesIncrease;
     public Variable<float> totalTime;
@@ -43,13 +45,21 @@ public class WaveManager : MonoBehaviour
     void Update()
     {
         totalTime.Value += Time.deltaTime;
-        if (totalTime.Value > 150)
+        
+        if (spikeTime < 0)
         {
-            foreach (GameObject spike in spikes)
-            {
-                spike.SetActive(true);
-            }
+            spikeTime -= Time.deltaTime;
         }
+        else
+        {
+            totalSpikes = Random.Range(0, spikes.Length);
+            for (int i = 0; i < totalSpikes; i++)
+            {
+                spikes[i].SetActive(true);
+            }
+            spikeTime = Random.Range(0, 10);
+        }
+        
         if (wave.waveDuration <= 0.0f)
         {
             SpawnWave();
