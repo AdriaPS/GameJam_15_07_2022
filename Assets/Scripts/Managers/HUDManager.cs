@@ -20,7 +20,7 @@ public class HUDManager : MonoBehaviour
         scorePoints.OnValueChanged += UpdateScreenValueInt;
         waveCount.OnValueChanged += UpdateScreenValueInt;
         scoreText.text = "Score: " + scorePoints.Value;
-        waveCountText.text = "Wave Count: " + waveCount.Value;
+        waveCountText.text = "Wave: " + waveCount.Value;
     }
 
     private void OnDisable()
@@ -38,7 +38,7 @@ public class HUDManager : MonoBehaviour
     private void UpdateScreenValueInt(int obj)
     {
         scoreText.text = "Score: " + scorePoints.Value;
-        waveCountText.text = "Wave Count: " + waveCount.Value;
+        waveCountText.text = "Wave: " + waveCount.Value;
     }
     
     public string FormatTime()
