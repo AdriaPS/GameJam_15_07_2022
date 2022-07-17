@@ -150,8 +150,8 @@ MonoBehaviour:
     variableValue: {fileID: 0}
   rigidbody: {fileID: 4327415508726358876}
   randomAngle:
-    min: -5
-    max: 5
+    min: -2.5
+    max: 2.5
 --- !u!1001 &1856863507072708833
 PrefabInstance:
   m_ObjectHideFlags: 0
