@@ -702,6 +702,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 427103374992500510, guid: 6647f271a2ae8424e93a130d8b4c98d1, type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 427103374992500510, guid: 6647f271a2ae8424e93a130d8b4c98d1, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 3
       objectReference: {fileID: 0}
@@ -1414,6 +1418,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1857326020}
     m_Modifications:
+    - target: {fileID: 3702984466538216300, guid: 7ee9196a09b60bd41a7d940a7a6dfbc6, type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3702984466538216300, guid: 7ee9196a09b60bd41a7d940a7a6dfbc6, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 3
@@ -2675,6 +2683,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1857326020}
     m_Modifications:
+    - target: {fileID: 3702984466538216300, guid: 7ee9196a09b60bd41a7d940a7a6dfbc6, type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3702984466538216300, guid: 7ee9196a09b60bd41a7d940a7a6dfbc6, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 8
