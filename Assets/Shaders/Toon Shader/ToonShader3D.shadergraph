@@ -14,6 +14,9 @@
         },
         {
             "m_Id": "ca0ba761ac1044a3a22eb0b70ded56d7"
+        },
+        {
+            "m_Id": "067a1172d86d42cd81df9bd51bbe822e"
         }
     ],
     "m_Keywords": [],
@@ -338,6 +341,35 @@
 }
 
 {
+    "m_SGVersion": 3,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty",
+    "m_ObjectId": "067a1172d86d42cd81df9bd51bbe822e",
+    "m_Guid": {
+        "m_GuidSerialized": "2b4ebc2b-b917-4640-b5f4-1b72940797b3"
+    },
+    "m_Name": "Tint",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Tint",
+    "m_DefaultReferenceName": "_Tint",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "r": 0.9528301954269409,
+        "g": 0.3730419874191284,
+        "b": 0.3730419874191284,
+        "a": 0.0
+    },
+    "isMainColor": false,
+    "m_ColorMode": 1
+}
+
+{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.SampleTexture2DNode",
     "m_ObjectId": "085ee9aafbb748fdba3f517a97c1fec5",
@@ -349,8 +381,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1026.0,
-            "y": -359.0,
+            "x": -1039.0,
+            "y": -311.0,
             "width": 183.0,
             "height": 251.0
         }
@@ -644,7 +676,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"eed4e476f77aa984b81d81bbad56aa2b\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -665,10 +697,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -673.0000610351563,
-            "y": 107.0,
+            "x": -791.0000610351563,
+            "y": 171.0,
             "width": 183.0,
-            "height": 251.00003051757813
+            "height": 250.99996948242188
         }
     },
     "m_Slots": [
@@ -1403,6 +1435,9 @@
         },
         {
             "m_Id": "ca0ba761ac1044a3a22eb0b70ded56d7"
+        },
+        {
+            "m_Id": "067a1172d86d42cd81df9bd51bbe822e"
         }
     ]
 }
@@ -1584,10 +1619,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -843.0000610351563,
-            "y": 136.99998474121095,
+            "x": -957.0000610351563,
+            "y": 137.0,
             "width": 121.0,
-            "height": 34.00001525878906
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -1839,10 +1874,10 @@
     "m_Guid": {
         "m_GuidSerialized": "935fef46-81be-4c8f-856a-0c5204f6a971"
     },
-    "m_Name": "Color",
+    "m_Name": "GlowingColor",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Color",
-    "m_DefaultReferenceName": "_Color",
+    "m_RefNameGeneratedByDisplayName": "GlowingColor",
+    "m_DefaultReferenceName": "_GlowingColor",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -1953,7 +1988,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "db390a36c35d48b0ac6b62f1cee16cf1",
     "m_Id": 0,
-    "m_DisplayName": "Color",
+    "m_DisplayName": "GlowingColor",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
