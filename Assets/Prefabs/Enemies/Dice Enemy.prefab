@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1702534307151844765}
   - component: {fileID: 1702534307151844763}
   - component: {fileID: 1702534307151844764}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Dice Enemy
   m_TagString: flying
   m_Icon: {fileID: 0}
