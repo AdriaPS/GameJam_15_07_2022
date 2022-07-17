@@ -1,5 +1,93 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2940662813030820544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 932508006616196092}
+  - component: {fileID: 3096764244967921887}
+  - component: {fileID: 4992398593245789969}
+  m_Layer: 5
+  m_Name: Healing Points Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &932508006616196092
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2940662813030820544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4747455805076152662}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 125, y: -681.1585}
+  m_SizeDelta: {x: 128.7009, y: 797.6855}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &3096764244967921887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2940662813030820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e472a0415b8747e89a01470d1fec076f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healingPoints: {fileID: 11400000, guid: 884ffcdb6bf582741b3ebcd21e4b372c, type: 2}
+  prefab: {fileID: 8088450542869020892, guid: 136e3bc55c0c4654dbd1c84b46d4d403, type: 3}
+  container: {fileID: 2940662813030820544}
+  animationScale:
+    useField: 1
+    fieldValue: 1.25
+    variableValue: {fileID: 0}
+  animationTime:
+    useField: 1
+    fieldValue: 0.2
+    variableValue: {fileID: 0}
+  animationEase: 21
+--- !u!114 &4992398593245789969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2940662813030820544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 1
+  m_Spacing: 80
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 1
+  m_ChildScaleHeight: 1
+  m_ReverseArrangement: 0
 --- !u!1 &4747455804628538187
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,7 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4747455804628538186}
   m_Layer: 5
-  m_Name: Container
+  m_Name: Health Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,6 +233,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4747455804628538186}
+  - {fileID: 932508006616196092}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

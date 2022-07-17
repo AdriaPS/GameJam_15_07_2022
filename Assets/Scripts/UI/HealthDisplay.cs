@@ -1,4 +1,5 @@
-﻿using Codetox.Variables;
+﻿using System;
+using Codetox.Variables;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +15,13 @@ namespace UI
         [SerializeField] private ValueReference<float> animationTime;
         [SerializeField] private Ease animationEase;
         [SerializeField] private Sprite[] sprites;
+        
+        private Vector3 _originalScale;
+
+        private void Awake()
+        {
+            _originalScale = transform.localScale;
+        }
 
         private void Start()
         {
@@ -38,6 +46,7 @@ namespace UI
             
             backgroundImage.material.SetInt("_isGlowing", 1);
             transform.DOKill();
+            transform.localScale = _originalScale;
             transform.
                 DOScale(transform.localScale * animationScale.Value, animationTime.Value).
                 SetEase(animationEase).
