@@ -19,14 +19,12 @@ public class WaveManager : MonoBehaviour
     public Variable<float> timeIncrease;
     public Variable<int> enemiesIncrease;
 
-    // Start is called before the first frame update
     void Awake()
     {
         timeIncrease.Value = 20.0f;
         enemiesIncrease.Value = 5;
     }
 
-    // Update is called once per frame
     void Update()
     {
         
