@@ -312,13 +312,13 @@ MonoBehaviour:
     fieldValue: 0
     variableValue: {fileID: 11400000, guid: 6f83ddc8d50d34b409b0b647fa6f7f9b, type: 2}
   recoilDistance:
-    useField: 1
+    useField: 0
     fieldValue: 3
-    variableValue: {fileID: 0}
+    variableValue: {fileID: 11400000, guid: fe71a6f25f3c0014b9e6e8b5f72149dd, type: 2}
   recoilTime:
-    useField: 1
+    useField: 0
     fieldValue: 0.25
-    variableValue: {fileID: 0}
+    variableValue: {fileID: 11400000, guid: c08aff29f63d18145ac24b466541d923, type: 2}
   recoilEase: 30
   onHit:
     m_PersistentCalls:
@@ -415,9 +415,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 2472598304076859956}
   glowingTime:
-    useField: 1
+    useField: 0
     fieldValue: 0.25
-    variableValue: {fileID: 0}
+    variableValue: {fileID: 11400000, guid: 2c95e056db34690419adb436eb09407b, type: 2}
   flickeringTime:
     useField: 1
     fieldValue: 1
@@ -1176,6 +1176,10 @@ PrefabInstance:
       value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 167270978840420987, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
+      propertyPath: distance.fieldValue
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 167270978840420987, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: onDash.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1790,6 +1794,10 @@ PrefabInstance:
       value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 167270978840420987, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
+      propertyPath: distance.fieldValue
+      value: 8.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 167270978840420987, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: onDash.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2012,6 +2020,10 @@ PrefabInstance:
     - target: {fileID: 167270978840420987, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: cooldown.fieldValue
       value: 0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 167270978840420987, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
+      propertyPath: distance.fieldValue
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 167270978840420987, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: onDash.m_PersistentCalls.m_Calls.Array.size
@@ -2306,6 +2318,10 @@ PrefabInstance:
     - target: {fileID: 167270978840420987, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: cooldown.fieldValue
       value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 167270978840420987, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
+      propertyPath: distance.fieldValue
+      value: 6.25
       objectReference: {fileID: 0}
     - target: {fileID: 167270978840420987, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: onFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2769,6 +2785,10 @@ PrefabInstance:
     - target: {fileID: 167270978840420987, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: cooldown.fieldValue
       value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 167270978840420987, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
+      propertyPath: distance.fieldValue
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 167270978840420987, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: onDash.m_PersistentCalls.m_Calls.Array.size

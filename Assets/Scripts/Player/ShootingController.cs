@@ -1,4 +1,5 @@
 ﻿using Codetox.Core;
+using Codetox.GameEvents;
 using Codetox.Misc;
 using Codetox.Variables;
 using UnityEngine;
@@ -12,6 +13,7 @@ namespace Player
         [SerializeField] private ValueReference<Vector2> direction;
         [SerializeField] private ValueReference<float> bulletsPerSecond;
         [SerializeField] private GameObject bulletPrefab;
+        [SerializeField] private GameEvent<GameObject> shootFlashEvent;
 
         private CoroutineBuilder _shootingCoroutine;
 
@@ -40,6 +42,7 @@ namespace Player
 
         private void ShootBullet(Transform source)
         {
+            shootFlashEvent.Invoke(source.gameObject);
             Instantiate(bulletPrefab, source.position, source.rotation);
         }
 

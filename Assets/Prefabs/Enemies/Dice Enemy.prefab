@@ -139,13 +139,13 @@ MonoBehaviour:
     fieldValue: 0
     variableValue: {fileID: 0}
   recoilDistance:
-    useField: 1
+    useField: 0
     fieldValue: 3
-    variableValue: {fileID: 0}
+    variableValue: {fileID: 11400000, guid: fe71a6f25f3c0014b9e6e8b5f72149dd, type: 2}
   recoilTime:
-    useField: 1
+    useField: 0
     fieldValue: 0.25
-    variableValue: {fileID: 0}
+    variableValue: {fileID: 11400000, guid: c08aff29f63d18145ac24b466541d923, type: 2}
   recoilEase: 30
   onHit:
     m_PersistentCalls:
@@ -305,9 +305,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   meshRenderer: {fileID: 2745532445784406529}
   glowingTime:
-    useField: 1
+    useField: 0
     fieldValue: 0.25
-    variableValue: {fileID: 0}
+    variableValue: {fileID: 11400000, guid: 2c95e056db34690419adb436eb09407b, type: 2}
   flickeringTime:
     useField: 1
     fieldValue: 0
