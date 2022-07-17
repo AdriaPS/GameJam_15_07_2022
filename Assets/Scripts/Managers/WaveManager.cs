@@ -17,6 +17,7 @@ public class WaveManager : MonoBehaviour
     public Transform[] skyPoints;
     public Wave[] waves;
     public GameObject[] typesEnemies;
+    public GameObject[] spikes;
     public Variable<float> timeIncrease;
     public Variable<int> enemiesIncrease;
 
