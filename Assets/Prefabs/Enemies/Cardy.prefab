@@ -235,6 +235,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 658ab325cb12b534c99eb069aa8f66ce, type: 2}
+        m_TargetAssemblyTypeName: Codetox.GameEvents.VoidGameEvent, com.aruizrab.codetox
+        m_MethodName: Invoke
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2193439994324181167
 MonoBehaviour:
   m_ObjectHideFlags: 0
