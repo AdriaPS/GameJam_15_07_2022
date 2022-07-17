@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5425150720387491857}
   - component: {fileID: 5425150720387491865}
   - component: {fileID: 8741317265615772368}
+  - component: {fileID: 8460694867034330531}
   m_Layer: 8
   m_Name: Rombus
   m_TagString: shooter
@@ -227,6 +228,30 @@ CircleCollider2D:
   m_Offset: {x: 0.02, y: -0.19}
   serializedVersion: 2
   m_Radius: 0.38
+--- !u!114 &8460694867034330531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5425150720387491858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c395c8761fe4939a9c7a856cd19355b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  glowingTime:
+    useField: 0
+    fieldValue: 0
+    variableValue: {fileID: 11400000, guid: 2c95e056db34690419adb436eb09407b, type: 2}
+  flickeringTime:
+    useField: 1
+    fieldValue: 0
+    variableValue: {fileID: 0}
+  onFinished:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5425150720820584480
 GameObject:
   m_ObjectHideFlags: 0
