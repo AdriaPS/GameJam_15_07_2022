@@ -29,4 +29,16 @@ public class GameManager : ScriptableObject
     {
         Application.Quit();
     }
+    
+    public void HideCursor()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void ShowCursor()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+    }
 }

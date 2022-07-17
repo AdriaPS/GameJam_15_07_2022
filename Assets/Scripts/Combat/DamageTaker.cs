@@ -36,15 +36,15 @@ namespace Combat
         public void TakeDamage(float amount, Transform source)
         {
             if (!CanTakeDamage) return;
-            
-            currentHealth.Value -= amount;
-            
-            if (currentHealth.Value <= 0)
+
+            if (currentHealth.Value - amount <= 0)
             {
                 onDie?.Invoke();
                 return;
             }
-            
+
+            currentHealth.Value -= amount;
+
             onHit?.Invoke();
 
             // rigidbody2D.isKinematic = true;
