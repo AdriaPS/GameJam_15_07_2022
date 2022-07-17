@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 3442428871020095054}
   m_Layer: 8
   m_Name: Cardy
-  m_TagString: Untagged
+  m_TagString: melee
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
