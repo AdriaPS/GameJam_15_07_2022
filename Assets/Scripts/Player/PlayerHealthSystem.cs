@@ -7,8 +7,16 @@ namespace Player
 {
     public class PlayerHealthSystem : DamageTaker
     {
+        public ValueReference<float> maxHealingPoints;
         public ValueReference<float> healingPoints;
         public UnityEvent onHeal;
+
+        public void AddHealingPoint()
+        {
+            if (Math.Abs(healingPoints.Value - maxHealingPoints.Value) < 0.001f) return;
+
+            healingPoints.Value += 1f;
+        }
 
         public void Heal()
         {

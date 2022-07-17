@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 686742819605186943}
   - component: {fileID: 766877412069816139}
   - component: {fileID: 5630308115860433911}
+  - component: {fileID: 472012144855167283}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -376,6 +377,10 @@ MonoBehaviour:
   onDie:
     m_PersistentCalls:
       m_Calls: []
+  maxHealingPoints:
+    useField: 1
+    fieldValue: 3
+    variableValue: {fileID: 0}
   healingPoints:
     useField: 0
     fieldValue: 0
@@ -447,6 +452,34 @@ MonoBehaviour:
   rigidbody2D: {fileID: 2472598303971787003}
   currentPosition: {fileID: 11400000, guid: 5924296b3fdfa074a807ef79fef320cc, type: 2}
   currentVelocity: {fileID: 11400000, guid: 7d284895a7f0dc4449105bad1940afda, type: 2}
+--- !u!114 &472012144855167283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2472598303971787007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d99689d07e4220862eb4341c1c736a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 658ab325cb12b534c99eb069aa8f66ce, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 686742819605186943}
+        m_TargetAssemblyTypeName: Player.PlayerHealthSystem, Assembly-CSharp
+        m_MethodName: AddHealingPoint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2472598304076859958
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,7 +669,19 @@ MonoBehaviour:
   - {fileID: 4557239273621130982}
   onInitialize:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 884ffcdb6bf582741b3ebcd21e4b372c, type: 2}
+        m_TargetAssemblyTypeName: Codetox.Variables.Variable`1[[System.Single, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2472598305103050637
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,6 +773,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 535221079561599569}
   - {fileID: 1984004559451867066}
   - {fileID: 8208380666258225597}
   - {fileID: 2857408327396684836}
@@ -1203,7 +1249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3969658288478818211, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3969658288478818211, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1666,7 +1712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3969658288478818211, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3969658288478818211, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1813,7 +1859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3969658288478818211, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3969658288478818211, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2025,7 +2071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3969658288478818211, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3969658288478818211, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2251,7 +2297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3969658288478818211, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3969658288478818211, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2463,6 +2509,68 @@ GameObject:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7728802789153246967, guid: 4a2fbdfe1ee32db4590de58de7d0ea3e, type: 3}
   m_PrefabInstance: {fileID: 5251031725645991201}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5273859034477186560
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2472598305104095541}
+    m_Modifications:
+    - target: {fileID: 5646949221747569745, guid: b93f07492f87b3247bd744653c571404, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646949221747569745, guid: b93f07492f87b3247bd744653c571404, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646949221747569745, guid: b93f07492f87b3247bd744653c571404, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646949221747569745, guid: b93f07492f87b3247bd744653c571404, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646949221747569745, guid: b93f07492f87b3247bd744653c571404, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646949221747569745, guid: b93f07492f87b3247bd744653c571404, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646949221747569745, guid: b93f07492f87b3247bd744653c571404, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646949221747569745, guid: b93f07492f87b3247bd744653c571404, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646949221747569745, guid: b93f07492f87b3247bd744653c571404, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646949221747569745, guid: b93f07492f87b3247bd744653c571404, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646949221747569745, guid: b93f07492f87b3247bd744653c571404, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752403759019856918, guid: b93f07492f87b3247bd744653c571404, type: 3}
+      propertyPath: m_Name
+      value: DashParticles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b93f07492f87b3247bd744653c571404, type: 3}
+--- !u!4 &535221079561599569 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5646949221747569745, guid: b93f07492f87b3247bd744653c571404, type: 3}
+  m_PrefabInstance: {fileID: 5273859034477186560}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6439539799846378954
 PrefabInstance:
@@ -2716,7 +2824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3969658288478818211, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3969658288478818211, guid: d4c4d884ebb9bc24daa236ff04727aae, type: 3}
       propertyPath: m_LocalPosition.x
