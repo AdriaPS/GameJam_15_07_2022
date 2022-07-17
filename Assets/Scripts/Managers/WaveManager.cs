@@ -46,12 +46,17 @@ public class WaveManager : MonoBehaviour
     {
         totalTime.Value += Time.deltaTime;
         
-        if (spikeTime < 0)
+        if (spikeTime > 0)
         {
             spikeTime -= Time.deltaTime;
         }
         else
         {
+            foreach (GameObject spike in spikes)
+            {
+                spike.SetActive(false);
+                
+            }
             totalSpikes = Random.Range(0, spikes.Length);
             for (int i = 0; i < totalSpikes; i++)
             {
