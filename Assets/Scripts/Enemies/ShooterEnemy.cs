@@ -5,7 +5,7 @@ using Codetox.Core;
 using Codetox.Variables;
 using UnityEngine;
 
-public class Shooter_Enemy : MonoBehaviour
+public class ShooterEnemy : MonoBehaviour
 {
     public Transform shootingPoint;
     public Animator animator;

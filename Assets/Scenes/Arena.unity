@@ -146,14 +146,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15259889}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -30.25, y: -2.6900005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1610587094}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &35648497
 GameObject:
   m_ObjectHideFlags: 0
@@ -1536,7 +1536,7 @@ MonoBehaviour:
   typesEnemies:
   - {fileID: 2193439994324181159, guid: a6c83e11a68202e468c412ec77269b1c, type: 3}
   - {fileID: 1702534307151844738, guid: 02b512cad861b59469f5ff0d8af5dcdf, type: 3}
-  - {fileID: 0}
+  - {fileID: 5425150720387491858, guid: 6fadaf6e89d367b499fea312a06c10e2, type: 3}
   spikes:
   - {fileID: 576869978}
   - {fileID: 1383265212}
@@ -1547,8 +1547,8 @@ MonoBehaviour:
   - {fileID: 511374613}
   timeIncrease: {fileID: 11400000, guid: 813fe9f1464d97b4faa5f0c94cd650d3, type: 2}
   enemiesIncrease: {fileID: 11400000, guid: 0bfae3bcb8ded86448f2397325b3a448, type: 2}
-  totalTime: {fileID: 0}
-  totalWaves: {fileID: 0}
+  totalTime: {fileID: 11400000, guid: 93c53d3c94db43e4c8456a9d72995b4d, type: 2}
+  totalWaves: {fileID: 11400000, guid: ae990b44bdfe9134b973dd29ee4a2ac0, type: 2}
 --- !u!4 &688891185
 Transform:
   m_ObjectHideFlags: 0
